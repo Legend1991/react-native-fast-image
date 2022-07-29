@@ -2,6 +2,7 @@ import React, { forwardRef, memo } from 'react'
 import {
     View,
     Image,
+    NativeModules,
     requireNativeComponent,
     StyleSheet,
     FlexStyle,
@@ -14,6 +15,8 @@ import {
 } from 'react-native'
 
 import preloaderManager from './PreloaderManager'
+
+const FastImageViewNativeModule = NativeModules.FastImageView
 
 export type ResizeMode = 'contain' | 'cover' | 'stretch' | 'center'
 
